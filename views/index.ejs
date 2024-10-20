@@ -1,9 +1,17 @@
 <%- include("partials/header.ejs") %>
-
-<% if (locals.title) { %>
-  <h1> <%= title %> </h1> 
-<% } else { %>
-  <h1>hello</h1>
-<% } %>
-
-<%- include("partials/footer.ejs") %>
+<div class="posts">
+  <% if (posts.length > 0) { %>
+    <% for(var i = 0; i < posts.length; i++) { %>
+      <div class="post">
+        <p><%= posts[i].title %></p>
+        <p><%= posts[i].body %></p>
+        <a href="/post/edit" id="<%= posts[i].postId %>">edit</a>
+        <button id="<%= posts[i].postId %>">delete</button>
+      </div>
+    <% } %>
+  <% } else { %>
+      <h1 style="color: #17191B">There are no posts yet, Create one!</h1>
+  <% } %>
+</div>
+</body>
+</html>

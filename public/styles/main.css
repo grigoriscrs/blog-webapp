@@ -1,0 +1,53 @@
+html{
+  font-family: "Roboto", sans-serif;
+}
+
+div{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #31363F;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  background-color: #222831;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-title{
+  color: #EEEEEE;
+  position: relative;
+  left: 20px;
+}
+
+.posts{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.btn{
+  border: 0;
+  border-radius: 5%;
+  font-weight: bold;
+}
+
+.create-btn{
+  margin-right: 30px;
+  background-color: #76ABAE;
+  height: 43px;
+  font-size: 1.2rem;
+  color: #222831;
+}
+
+
