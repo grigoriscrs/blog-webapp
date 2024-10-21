@@ -28,6 +28,11 @@ body{
   left: 20px;
 }
 
+.post-description{
+  color: #17191B;
+  text-align: center;
+}
+
 .posts{
   margin-top: 50px;
   width: 100%;
@@ -50,4 +55,21 @@ body{
   color: #222831;
 }
 
+.new-post-container{
+  width: 30%;
+}
 
+.form{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-title{
+  display: flex;
+  width: 100%;
+}
+
+.form-text{
+  width: 80%;
+}

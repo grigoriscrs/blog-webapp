@@ -2,16 +2,20 @@
 
 <div class="posts">
   <div class="new-post-container">
-    <p><strong>Create your new Post:</strong></p>
-    <form action="/submit" method="POST">
-      <div class="form-group">
-        <input type="text" class="form-control" name="postTitle" placeholder="Title">
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" name="postBody" placeholder="Write something: ">
-      </div>
-      <button type="/submit" class="btn btn-primary">Submit</button>
-    </form>
+    <div>
+      <h1 class="post-description">Create your new Post:</h1>
+    </div>
+    <div class="form">
+      <form action="/submit" method="POST">
+        <div class="form-title">
+          <input type="text" class="form-text" name="postTitle" placeholder="Title">
+        </div>
+        <div class="form-body">
+          <input type="text" class="form-text" name="postBody" placeholder="Write something:">
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </div>
 </div>
 
